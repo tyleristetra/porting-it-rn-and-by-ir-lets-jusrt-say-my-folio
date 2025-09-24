@@ -1,0 +1,10 @@
+this is so that the things works due to repurposing a different assignment
+as such the naming of the table's contents will not align with their fucntions
+
+
+db name: tracker
+table name: users
+table contents:
+id int 255(AI)
+email varchar 255//this is the item name
+password varchar 255//this is the item cost

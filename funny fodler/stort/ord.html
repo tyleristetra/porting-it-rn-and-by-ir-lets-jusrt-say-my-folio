@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body style="background-color: black;">
+<center>
+    <h1 style="color: white;">Order</h1>
+    <div style="margin: 100px; background-color: rgb(255, 255, 255); padding: 10px; border-radius: 30px;">
+        <h2>CUSTOMER INFO</h2>
+        <form action="summ.php" method="post">
+            <div style="background-color: rgb(255, 255, 255); padding: 10px; border-radius: 20px;">
+                <h3>Items for Sale:</h3>
+                <label for="">select any available laptop</label>
+                <div>
+                    <label for=""></label>
+                    <select name="p[]" required>
+                        <option value="p1:32000">Laptop-32K</option>
+                        <option value="p2:16000">Laptop-16K</option>
+                        <option value="p3:10000">Laptop-10K</option>
+                        <option value="p4:6000">Laptop-6K</option>
+                        <option value="p5:2500">Laptop-2.5K</option>
+                        <option value="p6:0">Not a laptop-0</option>
+                    </select>
+                    <label for="quant1">quantity:</label>
+                    <input type="number" name="q[]" min="1" value="1">
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</center>
+</body>
+</html>

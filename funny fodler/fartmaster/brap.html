@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+<center>
+    <h1 style="color: white;">Order</h1>
+    <div style="margin: 100px; background-color: cadetblue; padding: 90px; border-radius: 30px;">
+        <h2>CUSTOMER INFO</h2>
+        <form action="braphp.php" method="post">
+            <label for="name"><h3>Name</h3></label>
+            <input type="text" name="name" required>
+            <label for="email"><h3>Email</h3></label>
+            <input type="text" name="email" required>
+            <br><br><br>
+            <div style="background-color: rgb(77, 97, 141);">
+                <h3>Items for Sale:</h3>
+                <label for="">Select one or more products</label>
+                <div>
+                    <label for="prod1">Item 1: </label>
+                    <select name="p[]" required>
+                        <option value="p1:32000">Laptop P32000</option>
+                        <option value="p2:16000">Smartphone P16000</option>
+                        <option value="p3:10000">Tablet P10000</option>
+                        <option value="p4:6000">Monitor P6000</option>
+                        <option value="p5:2500">Headphones P2500</option>
+                    </select>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" name="quantity[]" min="1" value="1">
+                </div>
+                <div>
+                    <label for="prod2">Item 2: </label>
+                    <select name="p[]">
+                        <option value="p1:32000">Laptop P32000</option>
+                        <option value="p2:16000">Smartphone P16000</option>
+                        <option value="p3:10000">Tablet P10000</option>
+                        <option value="p4:6000">Monitor P6000</option>
+                        <option value="p5:2500">Headphones P2500</option>
+                    </select>
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" name="quantity[]" min="1" value="1">
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body style="background-color: black;">
+<center>
+    <h1 style="color: white;">Order</h1>
+    <div style="margin: 100px; background-color: cadetblue; padding: 90px; border-radius: 30px;">
+        <h2>CUSTOMER INFO</h2>
+        <form action="summ.php" method="post">
+            <label for="name"><h3>Name</h3></label>
+            <input type="text" name="name" required>
+            <label for="email"><h3>Email</h3></label>
+            <input type="text" name="email" required>
+            <br><br><br>
+            <div style="background-color: rgb(77, 97, 141); padding: 50px; border-radius: 20px;">
+                <h3>Items for Sale:</h3>
+                <label for="">select things (upto three slots)(idk how to make it create more on demand)</label>
+                <div>
+                    <label for="">slot 1</label>
+                    <select name="p[]" required>
+                        <option value="p1:32000">Laptop</option>
+                        <option value="p2:16000">Smartphone</option>
+                        <option value="p3:10000">Tablet</option>
+                        <option value="p4:6000">Monitor</option>
+                        <option value="p5:2500">Headphones</option>
+                    </select>
+                    <label for="quant1">quantity:</label>
+                    <input type="number" name="q[]" min="1" value="1">
+                </div>
+                <div>
+                    <label for="">slot 2</label>
+                    <select name="p[]" required>
+                        <option value="p1:32000">Laptop</option>
+                        <option value="p2:16000">Smartphone</option>
+                        <option value="p3:10000">Tablet</option>
+                        <option value="p4:6000">Monitor</option>
+                        <option value="p5:2500">Headphones</option>
+                    </select>
+                    <label for="quant2">quantity:</label>
+                    <input type="number" name="q[]" min="1" value="1">
+                </div>
+                <div>
+                    <label for="">slot 3</label>
+                    <select name="p[]" required>
+                        <option value="p1:32000">Laptop</option>
+                        <option value="p2:16000">Smartphone</option>
+                        <option value="p3:10000">Tablet</option>
+                        <option value="p4:6000">Monitor</option>
+                        <option value="p5:2500">Headphones</option>
+                    </select>
+                    <label for="quant3">quantity:</label>
+                    <input type="number" name="q[]" min="1" value="1">
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</center>
+</body>
+</html>
